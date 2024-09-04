@@ -7,12 +7,13 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Company>Energia Real</Company>
     <Description>Tools and utilities for integrating microservices using RabbitMQ</Description>
-    <PackageProjectUrl>https://github.com/Energia-Real/er-library-mq.git</PackageProjectUrl>
+    <PackageProjectUrl></PackageProjectUrl>
     <PackageTags>library;rabbitMQ;microservices</PackageTags>
     <PackageReleaseNotes>First Version NuGet about: library rabbitMQ</PackageReleaseNotes>
     <NeutralLanguage>en-US</NeutralLanguage>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <FileVersion>1.0.0</FileVersion>
+    <RepositoryUrl>https://github.com/Energia-Real/er-library-mq.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
