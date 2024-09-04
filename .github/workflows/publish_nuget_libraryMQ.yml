@@ -1,0 +1,31 @@
+name: Publicar NuGet
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v2
+
+      - name: Restaurar paquetes NuGet
+        run: dotnet restore
+
+      - name: Compilar proyecto
+        run: dotnet build -c Release
+
+      - name: Verificar archivo DLL
+        run: ls ./er.library.mq/bin/Release/net8.0
+
+      - name: Crear paquete NuGet
+        run: dotnet pack ./er.library.mq/er.library.mq.csproj -c Release --no-build
+
+      - name: Listar archivos del paquete NuGet
+        run: ls ./er.library.mq/bin/Release
+
+      - name: Publicar paquete NuGet
+        run: dotnet nuget push ./er.library.mq/bin/Release/*.nupkg --source "https://nuget.pkg.github.com/Energia-Real/index.json" --api-key ${{ secrets.NUGET_LIBRARYMQ_TOKEN }}
