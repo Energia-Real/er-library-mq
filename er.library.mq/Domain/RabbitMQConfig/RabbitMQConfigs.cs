@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace er.library.mq.Domain.RabbitMQ
+namespace er.library.mq.Domain.RabbitMQConfig
 {
-    public class RabbitMQConfig
+    public class RabbitMQConfigs
     {
         public string HostName { get; set; }
         public string UserName { get; set; }

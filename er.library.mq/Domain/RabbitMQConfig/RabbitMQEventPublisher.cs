@@ -9,7 +9,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace er.library.mq.Domain.RabbitMQ
+namespace er.library.mq.Domain.RabbitMQConfig
 {
     public class RabbitMQEventPublisher : IEventBus
     {
