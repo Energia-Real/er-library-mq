@@ -5,8 +5,8 @@
 
     public interface IEventBus
     {
-        Task SendCommand<T>(T command) where T : Command;
+        Task SendCommand<T>(T command, string actionType) where T : Command;
 
-        void Publish<T>(T @event) where T : Event;
+        Task Publish<T>(T @event, string actionType) where T : Event;
     }
 }
