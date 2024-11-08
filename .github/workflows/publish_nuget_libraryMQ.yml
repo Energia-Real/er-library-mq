@@ -28,4 +28,4 @@ jobs:
         run: ls ./er.library.mq/bin/Release
 
       - name: Publicar paquete NuGet
-        run: dotnet nuget push ./er.library.mq/bin/Release/*.nupkg --source "https://nuget.pkg.github.com/Energia-Real/index.json" --api-key ${{ secrets.NUGET_TOKEN }}
+        run: dotnet nuget push ./er.library.mq/bin/Release/*.nupkg --source "https://nuget.pkg.github.com/Energia-Real/index.json" --api-key ${{ secrets.IMPLEMENT_NUGET_TOKEN }}
