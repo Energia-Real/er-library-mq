@@ -11,12 +11,12 @@
     <PackageTags>library;rabbitMQ;microservices</PackageTags>
     <PackageReleaseNotes>First Version NuGet about: library rabbitMQ</PackageReleaseNotes>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
-    <FileVersion>1.0.1</FileVersion>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
+    <FileVersion>1.0.2</FileVersion>
     <RepositoryUrl>https://github.com/Energia-Real/er-library-mq.git</RepositoryUrl>
     <PackageId>$(AssemblyName)</PackageId>
     <Authors>Energia-Real</Authors>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

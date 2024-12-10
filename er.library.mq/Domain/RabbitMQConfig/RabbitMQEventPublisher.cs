@@ -28,7 +28,7 @@ namespace er.library.mq.Domain.RabbitMQConfig
             _channel = _connection.CreateModel();
 
             // Declarar el exchange y la cola
-            _channel.ExchangeDeclare(exchange: _exchangeName, type: ExchangeType.Topic);
+            _channel.ExchangeDeclare(exchange: _exchangeName, type: ExchangeType.Topic, durable: true);
             _channel.QueueDeclare(queue: _queueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
             _channel.QueueBind(queue: _queueName, exchange: _exchangeName, routingKey: _routingKey);
         }
