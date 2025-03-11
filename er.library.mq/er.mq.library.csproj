@@ -11,21 +11,17 @@
     <PackageTags>library;rabbitMQ;microservices</PackageTags>
     <PackageReleaseNotes>First Version NuGet about: library rabbitMQ</PackageReleaseNotes>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <AssemblyVersion>1.0.2</AssemblyVersion>
-    <FileVersion>1.0.2</FileVersion>
+    <AssemblyVersion>2.0.0</AssemblyVersion>
+    <FileVersion>2.0.0</FileVersion>
     <RepositoryUrl>https://github.com/Energia-Real/er-library-mq.git</RepositoryUrl>
     <PackageId>energiareal.mq</PackageId>
     <Authors>Energia Real</Authors>
-    <Version>1.0.2</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.4.0" />
-    <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="7.1.1" />
   </ItemGroup>
-
-	<ItemGroup>
-		<Content Include="Domain\**\*" Pack="true" PackagePath="Domain\" />
-	</ItemGroup>
 	
 </Project>
